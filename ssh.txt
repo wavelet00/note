@@ -1,0 +1,14 @@
+[server ip]
+ssh 10.158.14.36
+ssh 10.176.2.240
+ssh 10.176.2.244
+
+[install ssh]
+sudo apt-get install openssh-server 
+ssh-keygen -t rsa -C wonchan.chun@lge.com
+
+[automate ssh login with password]
+ssh-keygen ...
+ssh-copy-id userid@hostname
+ssh userid@hostname
+hostname$ cat ~/.ssh/authorized_keys
